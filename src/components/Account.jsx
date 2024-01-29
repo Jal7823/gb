@@ -17,7 +17,7 @@ function Bottoms() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://gb-tau-sable.vercel.app"
+          "https://gbbend.pythonanywhere.com/balance/pesos/"
         );
         setData(response.data);
       } catch (error) {
@@ -39,6 +39,7 @@ function Bottoms() {
       minimumFractionDigits: 2,
     });
   };
+  console.log(data);
 
   return (
     <>

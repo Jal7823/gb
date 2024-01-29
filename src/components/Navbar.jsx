@@ -11,7 +11,7 @@ function Navbar() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://gb-tau-sable.vercel.app/balance/pesos/"
+          "https://gbbend.pythonanywhere.com/balance/pesos/"
         );
         setData(response.data);
       } catch (error) {
@@ -22,7 +22,6 @@ function Navbar() {
     fetchData();
   }, []);
 
-  console.log(data);
 
   return (
     <nav className="bg-customPurpure border-gray-200 dark:bg-customPurpure ">
@@ -33,7 +32,7 @@ function Navbar() {
         >
           <img src="/logo.png" className="h-8" alt="Flowbite Logo" />
 
-          {data ? (
+          {data && Array.isArray(data) ? (
             data.map((el) => (
               <div key={el.id}>
                 <span className="self-center text-white font-semibold whitespace-nowrap dark:text-white">

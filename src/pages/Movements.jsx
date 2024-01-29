@@ -12,7 +12,7 @@ function Movements() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://gb-tau-sable.vercel.app/balance/movements/"
+          "https://gbbend.pythonanywhere.com/balance/movements/"
         );
         setData(response.data);
       } catch (error) {
