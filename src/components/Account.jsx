@@ -17,7 +17,7 @@ function Bottoms() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/balance/pesos/"
+          "https://gb-tau-sable.vercel.app"
         );
         setData(response.data);
       } catch (error) {

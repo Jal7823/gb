@@ -11,7 +11,7 @@ function Navbar() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/balance/pesos/"
+          "https://gb-tau-sable.vercel.app/balance/pesos/"
         );
         setData(response.data);
       } catch (error) {

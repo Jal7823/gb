@@ -12,7 +12,7 @@ function Movements() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/balance/movements/"
+          "https://gb-tau-sable.vercel.app/balance/movements/"
         );
         setData(response.data);
       } catch (error) {
