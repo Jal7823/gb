@@ -12,7 +12,7 @@ const LoadingPage = () => {
         <div>
           <div className="border-4 border-red-500 rounded-full inline-block">
             <FontAwesomeIcon
-              className="text-yellow-300 text-[90px] p-6 "
+              className="text-customPurpure text-[90px] p-6 "
               icon={faScrewdriverWrench}
             />
           </div>

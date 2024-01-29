@@ -39,7 +39,6 @@ function Bottoms() {
       minimumFractionDigits: 2,
     });
   };
-  console.log(data);
 
   return (
     <>
